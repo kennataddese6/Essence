@@ -48,24 +48,20 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        {menuicon && (
-          <ul className={menuicon ? 'open' : ''}>
-            {navlinks.map((navlink, index) => (
-              <li key={index}>
-                <Link
-                  href="#"
-                  className={
-                    pathname == navlink.href
-                      ? 'navbarlink-active'
-                      : 'navbarlink'
-                  }
-                >
-                  {navlink.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul className={!menuicon ? 'desktopheader' : ''}>
+          {navlinks.map((navlink, index) => (
+            <li key={index}>
+              <Link
+                href="#"
+                className={
+                  pathname == navlink.href ? 'navbarlink-active' : 'navbarlink'
+                }
+              >
+                {navlink.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </header>
   );
