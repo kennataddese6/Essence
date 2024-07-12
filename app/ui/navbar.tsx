@@ -3,7 +3,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="sub-header col-lg-11 col-xl-9">
-        <div>
+        <div className="logo">
           <span>E</span>Essence
         </div>
         <ul>

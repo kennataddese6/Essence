@@ -17,8 +17,23 @@ header {
   margin: auto;
   padding: 1em 0;
 }
+.logo {
+  padding: 0.5em 1.25em;
+  font-size: 1.5rem;
+  color: #233348;
+}
+.logo span {
+  background-color: #458ff6;
+  color: white;
+  padding: 0.2em 0.5em;
+  margin: 0 0.4em 0 0;
+  border-radius: 50%;
+}
 .sub-header ul {
   list-style-type: none;
+}
+.sub-header ul li {
+  padding: 1em 2em;
 }
 
 .navbarlink {
@@ -196,6 +211,12 @@ header {
   .sub-header {
     margin: auto;
     padding: 2em 0;
+  }
+  .sub-header ul li {
+    padding: 0;
+  }
+  .logo {
+    padding: 0;
   }
 }
 
