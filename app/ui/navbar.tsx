@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 const Navbar = () => {
   const pathname = usePathname();
-  const [menuicon, setMenuIcon] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   const navlinks = [
     {
       name: 'Home',
@@ -28,7 +28,7 @@ const Navbar = () => {
     },
   ];
   const handlemenu = () => {
-    setMenuIcon(!menuicon);
+    setShowMenu(!showMenu);
   };
   return (
     <header>
@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
           <div className="menuContainer">
             <div
-              className={`menu-icon ${menuicon ? 'active' : ''}`}
+              className={`menu-icon ${showMenu ? 'active' : ''}`}
               onClick={handlemenu}
             >
               <div className="line line-1"></div>
@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <ul className={!menuicon ? 'desktopheader' : ''}>
+        <ul className={!showMenu ? 'desktopheader' : ''}>
           {navlinks.map((navlink, index) => (
             <li key={index}>
               <Link
