@@ -88,6 +88,11 @@ header {
   color: #1f1534;
   font-weight: 700;
 }
+.heroContainer {
+  background-color: #458ff6;
+  height: 90vh;
+  margin: auto;
+}
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
   .col-xs-1 {
