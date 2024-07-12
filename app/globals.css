@@ -3,8 +3,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html,
 body,
 .__className_aaf875 {
   scroll-behavior: smooth;
+}
+.header {
+  color: black;
+}
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices */
+@media only screen and (min-width: 600px) {
+  .header {
+    color: green;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 768px) {
+  .header {
+    color: yellow;
+  }
+}
+/* Laptop */
+@media only screen and (min-width: 992px) {
+  .header {
+    color: red;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .header {
+    color: blue;
+  }
 }

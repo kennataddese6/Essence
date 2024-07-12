@@ -1,3 +1,9 @@
+import styles from "./page.module.css";
+
 export default function Home() {
-  return <h1>Home page</h1>;
+  return (
+    <>
+      <h1 className="header">hello</h1>
+    </>
+  );
 }
