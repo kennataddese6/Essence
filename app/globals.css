@@ -38,6 +38,10 @@ header {
 
 .navbarlink {
   text-decoration: none;
+  color: grey;
+}
+.navbarlink-active {
+  text-decoration: none;
   color: #1f1534;
 }
 /* Extra small devices */

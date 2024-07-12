@@ -1,5 +1,31 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
+  const pathname = usePathname();
+  console.log(pathname, "path");
+  const navlinks = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Products",
+      href: "/products",
+    },
+    {
+      name: "About",
+      href: "/about",
+    },
+    {
+      name: "Contact",
+      href: "/products",
+    },
+    {
+      name: "Sign in",
+      href: "/signin",
+    },
+  ];
   return (
     <header>
       <div className="sub-header col-lg-11 col-xl-9">
@@ -7,31 +33,18 @@ const Navbar = () => {
           <span>E</span>Essence
         </div>
         <ul>
-          <li>
-            <Link href="#" className="navbarlink">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="navbarlink">
-              Products
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="navbarlink">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="navbarlink">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link href="#" className="navbarlink">
-              Sign in
-            </Link>
-          </li>
+          {navlinks.map((navlink, index) => (
+            <li key={index}>
+              <Link
+                href="#"
+                className={
+                  pathname == navlink.href ? "navbarlink-active" : "navbarlink"
+                }
+              >
+                {navlink.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </header>
