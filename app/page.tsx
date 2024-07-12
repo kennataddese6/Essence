@@ -1,9 +1,58 @@
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
     <>
-      <h1 className="header">hello</h1>
+      <div className="col-lg-11 col-xl-9" style={{ margin: "auto" }}>
+        <h1>Hello1</h1>
+        <h1>Hello2</h1>
+        <h1>Hello3</h1>
+        <h1>Hello4</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+        <h1>Hello</h1>
+      </div>
     </>
   );
 }
