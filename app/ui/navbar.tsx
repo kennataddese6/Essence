@@ -28,7 +28,7 @@ const Navbar = () => {
   ];
   return (
     <header>
-      <div className="sub-header col-lg-11 col-xl-10">
+      <div className="sub-header col-lg-11 col-xl-11">
         <div className="logo">
           <span>E</span>Essence
         </div>

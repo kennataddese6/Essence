@@ -39,12 +39,13 @@ header {
 
 .navbarlink {
   text-decoration: none;
-  color: grey;
+  color: #1f1534;
+  font-weight: 320;
 }
 .navbarlink-active {
   text-decoration: none;
-  color: #0070f3;
-  font-weight: bolder;
+  color: #1f1534;
+  font-weight: 700;
 }
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
@@ -221,14 +222,14 @@ header {
   }
   .logo {
     padding: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #233348;
   }
   .navbarlink {
-    font-size: small;
+    font-size: medium;
   }
   .navbarlink-active {
-    font-size: small;
+    font-size: medium;
   }
 }
 
