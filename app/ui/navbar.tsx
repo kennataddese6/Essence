@@ -1,34 +1,34 @@
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname, "path");
+  console.log(pathname, 'path');
   const navlinks = [
     {
-      name: "Home",
-      href: "/",
+      name: 'Home',
+      href: '/',
     },
     {
-      name: "Products",
-      href: "/products",
+      name: 'Products',
+      href: '/products',
     },
     {
-      name: "About",
-      href: "/about",
+      name: 'About',
+      href: '/about',
     },
     {
-      name: "Contact",
-      href: "/products",
+      name: 'Contact',
+      href: '/products',
     },
     {
-      name: "Sign in",
-      href: "/signin",
+      name: 'Sign in',
+      href: '/signin',
     },
   ];
   return (
     <header>
-      <div className="sub-header col-lg-11 col-xl-9">
+      <div className="sub-header col-lg-11 col-xl-10">
         <div className="logo">
           <span>E</span>Essence
         </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link
                 href="#"
                 className={
-                  pathname == navlink.href ? "navbarlink-active" : "navbarlink"
+                  pathname == navlink.href ? 'navbarlink-active' : 'navbarlink'
                 }
               >
                 {navlink.name}
