@@ -68,7 +68,19 @@ header {
 }
 .sub-header ul {
   list-style-type: none;
-  transition: all 1s ease-out;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  animation: slide-down 0.5s ease-in forwards;
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 .desktopheader {
   list-style-type: none;
@@ -259,6 +271,9 @@ header {
   }
   .sub-header ul {
     display: flex;
+    position: static;
+    width: auto;
+    background-color: transparent;
   }
   .desktopheader {
     display: flex;
