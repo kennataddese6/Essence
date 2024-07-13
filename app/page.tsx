@@ -1,8 +1,8 @@
-import Hero from './ui/hero';
+import Hero from "./ui/hero";
 export default function Home() {
   return (
     <>
-      <div className="col-lg-11 col-xl-11" style={{ margin: 'auto' }}>
+      <div className="col-lg-11 col-xl-11 col-xxl-9" style={{ margin: "auto" }}>
         <Hero />
         <h1>Hello2</h1>
         <h1>Hello3</h1>
