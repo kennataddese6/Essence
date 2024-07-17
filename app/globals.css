@@ -80,7 +80,7 @@ header {
     height: 0;
   }
   to {
-    height: 250px;
+    height: 280px;
   }
 }
 .desktopheader {
@@ -105,6 +105,7 @@ header {
   height: 88vh;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .hero-image {
   width: 100%;
@@ -115,8 +116,9 @@ header {
 .herotextcontainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  padding: 0 4em 0 0;
+  width: 100%;
 }
 
 /* Laptop */
@@ -159,5 +161,12 @@ header {
   .sub-header ul {
     animation: none;
     height: auto;
+  }
+  .herotextcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 4em 0 0;
   }
 }
