@@ -25,7 +25,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: slide-down 0.5s ease-in forwards;
 }
 .menu-icon {
   width: 25px;
@@ -71,17 +70,17 @@ header {
   list-style-type: none;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(32px);
-  position: absolute;
-  z-index: -1;
   width: 100%;
   animation: slide-down 0.5s ease-in forwards;
+  height: 0;
+  overflow: hidden;
 }
 @keyframes slide-down {
   from {
-    transform: translateY(-100%);
+    height: 0;
   }
   to {
-    transform: translateY(6.2%);
+    height: 250px;
   }
 }
 .desktopheader {
@@ -299,6 +298,10 @@ header {
   }
   .menuContainer {
     display: none;
+  }
+  .sub-header ul {
+    animation: none;
+    height: auto;
   }
 }
 
