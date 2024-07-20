@@ -2,6 +2,7 @@ import Hero from './ui/hero';
 import { AiOutlineMedicineBox } from 'react-icons/ai';
 import Image from 'next/image';
 import { CiSearch } from 'react-icons/ci';
+import { FaUserDoctor } from 'react-icons/fa6';
 import secondImage from '@/assets/secondImage.png';
 import thirdImage from '@/assets/thirdImage.png';
 export default function Home() {
@@ -30,12 +31,12 @@ export default function Home() {
             </p>
           </div>
           <div className="py-3">
-            <AiOutlineMedicineBox
+            <FaUserDoctor
               fontSize={66}
               color="dodgerblue"
               className="d-block mx-auto"
             />
-            <h5 className="text-center m-2 ">Search Medicine</h5>
+            <h5 className="text-center m-2 ">Buy Products</h5>
             <p className="px-3 text-center text-secondary">
               Choose your medicine from thousands of general and trusted brands
             </p>
@@ -46,21 +47,21 @@ export default function Home() {
               color="dodgerblue"
               className="d-block mx-auto"
             />
-            <h5 className="text-center m-2 ">Search Medicine</h5>
+            <h5 className="text-center m-2 ">Assure quality</h5>
             <p className="px-3 text-center text-secondary">
               Choose your medicine from thousands of general and trusted brands
             </p>
           </div>
         </div>
         <button className="service-button mx-auto my-4">Learn More</button>
-        <div className="heroContainer col-xl-12 col-xxl-9">
+        <div className="heroContainer col-xl-11 col-xxl-9">
           <div className="col-lg-6 ">
             <Image src={secondImage} alt="Hero Image" className="hero-image" />
           </div>
           <div className=" col-lg-6 herotextcontainer">
-            <h1 className="mx-5 text-center text-lg-start ">
+            <h2 className="mx-5 text-center text-lg-start ">
               Leading healthcare providers
-            </h1>
+            </h2>
             <p className="mx-3 mx-lg-5  text-secondary text-center text-lg-start py-2">
               We are dedicated to enhancing healthcare by providing top-tier
               medical equipment from around the globe.Our commitment to
@@ -72,18 +73,18 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div className="heroContainer col-xl-12 col-xxl-9 flex-wrap-reverse">
+        <div className="heroContainer col-xl-11 col-xxl-9 flex-wrap-reverse">
           <div className=" col-lg-6 herotextcontainer">
-            <h1 className="my-2 text-center text-lg-start p-2">
-              Empowering health care with quality
-            </h1>
-            <p className="px-2 text-secondary text-center text-lg-start p-2">
+            <h2 className="my-2 text-center text-lg-start py-2 px-3 px-lg-5">
+              Your health is the most important
+            </h2>
+            <p className="mx-3 mx-lg-5  text-secondary text-center text-lg-start py-2">
               We are dedicated to enhancing healthcare by providing top-tier
               medical equipment from around the globe.Our commitment to
               excellence ensures that healthcare providers have access to the
               latest reliable tools.
             </p>
-            <button className="service-button my-2 w-30 py-2">
+            <button className="service-button my-2 w-30 py-2 mx-5">
               Learn more
             </button>
           </div>
