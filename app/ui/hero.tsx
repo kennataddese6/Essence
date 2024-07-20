@@ -9,7 +9,7 @@ export default function Hero() {
         <h1 className="my-2 text-center text-lg-start p-2">
           Empowering health care with quality
         </h1>
-        <p className="my-2 text-secondary text-center text-lg-start p-2">
+        <p className="px-2 text-secondary text-center text-lg-start p-2">
           We are dedicated to enhancing healthcare by providing top-tier medical
           equipment from around the globe.Our commitment to excellence ensures
           that healthcare providers have access to the latest reliable tools.

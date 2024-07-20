@@ -9,7 +9,7 @@ export default function Home() {
         <Hero />
         <h2 className="text-center my-4">Our services</h2>
         <div className="serviceUnderline"></div>
-        <p className="text-secondary px-3 text-center my-4 col-lg-9 mx-auto">
+        <p className="text-secondary px-2 text-center my-4 col-lg-9 mx-auto">
           We provide the best choices for you. Adjust it to your health needs
           and make sure you under go treatment with our highly qualified doctors
           you can consult with us which type of service is suitable for your
