@@ -152,6 +152,10 @@ header {
   border-radius: 55px;
   display: block;
 }
+.service-button:hover {
+  background-color: #458ff6;
+  color: white;
+}
 /* Laptop */
 @media only screen and (min-width: 992px) {
   .sub-header {
