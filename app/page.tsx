@@ -11,7 +11,7 @@ export default function Home() {
       <div className="col-lg-11 col-xl-11 col-xxl-9 mx-auto">
         <Hero />
         <h2 className="text-center my-4">Our services</h2>
-        <div className="serviceUnderline"></div>
+        <div className="serviceUnderline mx-auto"></div>
         <p className="text-secondary px-3 text-center my-4 col-lg-9 mx-auto">
           We provide the best choices for you. Adjust it to your health needs
           and make sure you under go treatment with our highly qualified doctors
@@ -62,6 +62,7 @@ export default function Home() {
             <h2 className="mx-5 text-center text-lg-start ">
               Leading healthcare providers
             </h2>
+            <div className="serviceUnderline mx-5 my-3"></div>
             <p className="mx-3 mx-lg-5  text-secondary text-center text-lg-start py-2">
               We are dedicated to enhancing healthcare by providing top-tier
               medical equipment from around the globe.Our commitment to
@@ -78,6 +79,7 @@ export default function Home() {
             <h2 className="my-2 text-center text-lg-start py-2 px-3 px-lg-5">
               Your health is the most important
             </h2>
+            <div className="serviceUnderline mx-5 my-3"></div>
             <p className="mx-3 mx-lg-5  text-secondary text-center text-lg-start py-2">
               We are dedicated to enhancing healthcare by providing top-tier
               medical equipment from around the globe.Our commitment to

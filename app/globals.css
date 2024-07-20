@@ -123,8 +123,7 @@ header {
 .serviceUnderline {
   width: 66px;
   height: 2px;
-  background-color: black;
-  margin: auto;
+  background: linear-gradient(to right, #6abbff, #64c2ef);
 }
 .serviceContainer {
   display: flex;
