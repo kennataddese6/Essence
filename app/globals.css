@@ -120,7 +120,38 @@ header {
   justify-content: center;
   width: 100%;
 }
-
+.serviceUnderline {
+  width: 66px;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+}
+.serviceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.serviceContainer div {
+  width: 100%;
+  margin: 0.5em 1em;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  border-color: white;
+  box-shadow: 0 0 2px dodgerblue;
+}
+.serviceContainer div:hover {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 4px dodgerblue;
+}
+.service-button {
+  background-color: white;
+  border: 1px solid #458ff6;
+  color: #458ff6;
+  padding: 0.5em 1.25em;
+  border-radius: 55px;
+  display: block;
+}
 /* Laptop */
 @media only screen and (min-width: 992px) {
   .sub-header {
@@ -168,5 +199,8 @@ header {
     justify-content: center;
     align-items: start;
     padding: 0 4em 0 0;
+  }
+  .serviceContainer div {
+    width: 300px;
   }
 }
