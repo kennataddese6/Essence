@@ -161,6 +161,7 @@ header {
   .sub-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
     padding: 1.5em 0;
   }
@@ -169,14 +170,15 @@ header {
     position: static;
     width: auto;
     background-color: transparent;
+    animation: none;
+    height: auto;
+    margin: 0;
   }
   .desktopheader {
     display: flex;
   }
   .sub-header ul li {
     margin: 0 0 0 2.5em;
-  }
-  .sub-header ul li {
     padding: 0;
   }
   .logo {
@@ -193,10 +195,7 @@ header {
   .menuContainer {
     display: none;
   }
-  .sub-header ul {
-    animation: none;
-    height: auto;
-  }
+
   .herotextcontainer {
     display: flex;
     flex-direction: column;
