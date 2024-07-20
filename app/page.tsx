@@ -3,6 +3,7 @@ import { AiOutlineMedicineBox } from 'react-icons/ai';
 import Image from 'next/image';
 import { CiSearch } from 'react-icons/ci';
 import secondImage from '@/assets/secondImage.png';
+import thirdImage from '@/assets/thirdImage.png';
 export default function Home() {
   return (
     <>
@@ -69,6 +70,25 @@ export default function Home() {
             <button className="service-button my-2 w-30 py-2 mx-5">
               Learn more
             </button>
+          </div>
+        </div>
+        <div className="heroContainer col-xl-12 col-xxl-9 flex-wrap-reverse">
+          <div className=" col-lg-6 herotextcontainer">
+            <h1 className="my-2 text-center text-lg-start p-2">
+              Empowering health care with quality
+            </h1>
+            <p className="px-2 text-secondary text-center text-lg-start p-2">
+              We are dedicated to enhancing healthcare by providing top-tier
+              medical equipment from around the globe.Our commitment to
+              excellence ensures that healthcare providers have access to the
+              latest reliable tools.
+            </p>
+            <button className="service-button my-2 w-30 py-2">
+              Learn more
+            </button>
+          </div>
+          <div className="col-lg-6 ">
+            <Image src={thirdImage} alt="Hero Image" className="hero-image" />
           </div>
         </div>
         <h1>Hello3</h1>
