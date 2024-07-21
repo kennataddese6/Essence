@@ -49,6 +49,19 @@ export default function Home() {
             <Image src={thirdImage} alt="Hero Image" className="hero-image" />
           </div>
         </div>
+        <div className="col-lg-9 mx-auto py-4 feedbacks">
+          <h2 className="text-center text-white">
+            What people are saying about us
+          </h2>
+          <div
+            className="serviceUnderline mx-5 my-5 mx-auto"
+            style={{ backgroundColor: 'white !important' }}
+          ></div>
+          <div className="d-flex justify-content-between col-lg-9 mx-auto ">
+            <div>Kenna T.</div>
+            <p>"This guys are the deal. I have received the best attibute"</p>
+          </div>
+        </div>
         <h1>Hello3</h1>
         <h1>Hello4</h1>
         <h1>Hello</h1>

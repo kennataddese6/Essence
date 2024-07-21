@@ -123,7 +123,7 @@ header {
 .serviceUnderline {
   width: 66px;
   height: 2px;
-  background: linear-gradient(to right, #6abbff, #64c2ef);
+  background: linear-gradient(to right, #6abbff, #4a82b2);
 }
 .serviceContainer {
   display: flex;
@@ -154,6 +154,10 @@ header {
 .service-button:hover {
   background-color: #458ff6;
   color: white;
+}
+.feedbacks {
+  border-radius: 12px;
+  background: linear-gradient(to top, #599af1, #66c3f7);
 }
 /* Laptop */
 @media only screen and (min-width: 992px) {
