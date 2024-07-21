@@ -50,16 +50,16 @@ export default function Home() {
             <Image src={thirdImage} alt="Hero Image" className="hero-image" />
           </div>
         </div>
-        <div className="col-lg-10 mx-auto my-4 py-5 feedbacks">
+        <div className="col-lg-10 mx-lg-auto  px-2 my-4 py-4 py-lg-5 feedbacks">
           <h2 className="text-center text-white">
             What people are saying about us
           </h2>
           <div
-            className="serviceUnderline mx-5  my-5 mx-auto"
+            className="serviceUnderline mx-5  my-4 my-lg-5 mx-auto"
             style={{ backgroundColor: 'white !important' }}
           ></div>
           <div className="d-flex flex-wrap justify-content-between col-lg-9 mx-auto ">
-            <div className="text-white  d-flex align-items-center  col-lg-6 py-2">
+            <div className="text-white  d-flex align-items-center  col-lg-6 py-2  mx-auto mx-lg-0">
               <div className="customerProfile">
                 <Image
                   src={perfectface}
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 p-3">
-              <p className="text-white">
+              <p className="text-white text-center text-lg-start">
                 "This guys are the deal. I have received the best attibute.
                 There patience and growing intel is what makes them the best
                 There patience and growing intel is what makes them the best "
