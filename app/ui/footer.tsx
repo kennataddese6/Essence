@@ -9,30 +9,38 @@ export default function Footer() {
       <div className="footerItem">
         <h5 className="white-text p-3 ps-4">MT Custom Lights</h5>
         <p className="white-text ps-3">
-          <MdLocationOn color="grey" fontSize={24} />
-          <span className="ms-1 text-secondary">California, USA</span>
+          <MdLocationOn color="white" fontSize={24} />
+          <span className="ms-1 ">Bole, A.A Ethiopia</span>
         </p>
         <p className="white-text ps-3">
-          <MdPhone color="grey" fontSize={24} />
-          <span className="ms-1 text-secondary">+251 991 374186</span>
+          <MdPhone color="white" fontSize={24} />
+          <span className="ms-1 ">+251 991 374186</span>
         </p>
         <p className="white-text ps-3">
-          <MdOutlineEmail color="grey" fontSize={24} />
-          <span className="ms-2 text-secondary">mtcuss@gmail.com</span>
+          <MdOutlineEmail color="white" fontSize={24} />
+          <span className="ms-2 ">essence@gmail.com</span>
         </p>
       </div>
       <div className="footerItem">
-        <h5 className="white-text p-3">Our Product</h5>
-        <p className="white-text ps-3 text-secondary">Build kit</p>
-        <p className="white-text ps-3 text-secondary">Parts for sale</p>
-        <p className="white-text ps-3 text-secondary">Work with us</p>
+        <h5 className="white-text p-3">Company</h5>
+        <p className="white-text ps-3 ">About</p>
+        <p className="white-text ps-3 ">Testimonials</p>
+        <p className="white-text ps-3 ">Find a Product</p>
+        <p className="white-text ps-3 ">Meds</p>
+      </div>
+      <div className="footerItem">
+        <h5 className="white-text p-3">Region</h5>
+        <p className="white-text ps-3 ">Addis Ababa</p>
+        <p className="white-text ps-3 ">Adama</p>
+        <p className="white-text ps-3 ">Hawassa</p>
+        <p className="white-text ps-3 ">Gonder</p>
       </div>
       <div className="footerItem">
         <h5 className="white-text p-3 ps-4">Follow us</h5>
         <p className="white-text ps-3 ">
-          <CiFacebook color="grey" fontSize={32} className="m-1" />
-          <FaXTwitter color="grey" fontSize={32} className="m-1" />
-          <CiInstagram color="grey" fontSize={32} />
+          <CiFacebook color="white" fontSize={32} className="m-1" />
+          <FaXTwitter color="white" fontSize={32} className="m-1" />
+          <CiInstagram color="white" fontSize={32} />
         </p>
       </div>
     </footer>
