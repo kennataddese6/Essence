@@ -156,8 +156,8 @@ header {
   color: white;
 }
 .feedbacks {
-  border-radius: 12px;
-  background: linear-gradient(to top right, #5a98f2 60%, #63b6f3);
+  border-radius: 32px;
+  background: linear-gradient(to top right, #5a98f2, #67c1f4);
 }
 .customerProfile {
   width: 100px;

@@ -55,10 +55,10 @@ export default function Home() {
             What people are saying about us
           </h2>
           <div
-            className="serviceUnderline mx-5  my-4 my-lg-5 mx-auto"
-            style={{ backgroundColor: 'white !important' }}
+            className="serviceUnderline mx-5  my-4 my-lg-4 mx-auto"
+            style={{ background: 'white !important' }}
           ></div>
-          <div className="d-flex flex-wrap justify-content-between col-lg-9 mx-auto ">
+          <div className="d-flex flex-wrap justify-content-between col-lg-9 mx-auto  py-4 ">
             <div className="text-white  d-flex align-items-center  col-lg-6 py-2  mx-auto mx-lg-0">
               <div className="customerProfile">
                 <Image
