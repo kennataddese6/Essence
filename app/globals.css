@@ -188,6 +188,11 @@ footer {
   padding: 0.5em;
   color: white;
 }
+.productsContainer div {
+  border: 1px solid grey;
+  min-width: 250px;
+  margin: 1em;
+}
 /* Laptop */
 @media only screen and (min-width: 992px) {
   .sub-header {

@@ -50,7 +50,7 @@ export default function Home() {
             <Image src={thirdImage} alt="Hero Image" className="hero-image" />
           </div>
         </div>
-        <div className="col-lg-10 mx-lg-auto  px-2 my-4 py-4 py-lg-5 feedbacks">
+        <div className="col-lg-10 mx-lg-auto  px-2 my-5 py-4 py-lg-5 feedbacks">
           <h2 className="text-center text-white">
             What people are saying about us
           </h2>
@@ -81,6 +81,16 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+        <h2 className="text-center mt-5 mb-4">Check our latest Products</h2>
+        <div
+          className="serviceUnderline mx-auto mb-5"
+          style={{ background: 'black' }}
+        ></div>
+        <div className="d-flex justify-content-around flex-wrap productsContainer">
+          <div>Product one</div>
+          <div>Product two</div>
+          <div>Product three</div>
         </div>
       </div>
     </>
