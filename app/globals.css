@@ -189,9 +189,26 @@ footer {
   color: white;
 }
 .productsContainer div {
-  border: 1px solid grey;
-  min-width: 250px;
+  box-shadow: 0 6px 8px 0 lightgrey, 0 12px 16px 0 lightgray;
+  border-radius: 16px;
+  width: 250px;
   margin: 1em;
+}
+.productImage {
+  object-fit: contain;
+}
+.order-button {
+  background-color: #458ff6;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  padding: 0.5em 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.bold-text {
+  font-weight: 700;
 }
 /* Laptop */
 @media only screen and (min-width: 992px) {

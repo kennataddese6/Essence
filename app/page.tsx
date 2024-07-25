@@ -4,6 +4,8 @@ import secondImage from '@/assets/secondImage.png';
 import thirdImage from '@/assets/thirdImage.png';
 import Services from './ui/services';
 import perfectface from '@/assets/perfect-face.jpg';
+import eqip1 from '@/assets/equip1.jpg';
+import { FaStar } from 'react-icons/fa';
 export default function Home() {
   return (
     <>
@@ -88,9 +90,102 @@ export default function Home() {
           style={{ background: 'black' }}
         ></div>
         <div className="d-flex justify-content-around flex-wrap productsContainer">
-          <div>Product one</div>
-          <div>Product two</div>
-          <div>Product three</div>
+          <div>
+            <Image
+              src={eqip1}
+              alt="product image"
+              width={250}
+              height={150}
+              className="productImage"
+            />
+            <h5 className="text-center bold-text m-1">Therocare</h5>
+            <p className="text-secondary text-center my-1 mx-2">
+              <small>
+                This is the best equiment now. Take it without hesitation
+              </small>
+            </p>
+            <p className="text-center m-1 bold-text">$450</p>
+            <p className="text-center  w-50 d-flex mx-auto justify-content-around px-2">
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar />
+            </p>
+            <button className="order-button">Buy Now</button>
+          </div>
+          <div>
+            <Image
+              src={eqip1}
+              alt="product image"
+              width={250}
+              height={150}
+              className="productImage"
+            />
+            <h5 className="text-center bold-text m-1">Therocare</h5>
+            <p className="text-secondary text-center my-1 mx-2">
+              <small>
+                This is the best equiment now. Take it without hesitation
+              </small>
+            </p>
+            <p className="text-center m-1 bold-text">$450</p>
+            <p className="text-center  w-50 d-flex mx-auto justify-content-around px-2">
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar />
+            </p>
+            <button className="order-button">Buy Now</button>
+          </div>
+          <div>
+            <Image
+              src={eqip1}
+              alt="product image"
+              width={250}
+              height={150}
+              className="productImage"
+            />
+            <h5 className="text-center bold-text m-1">Therocare</h5>
+            <p className="text-secondary text-center my-1 mx-2">
+              <small>
+                This is the best equiment now. Take it without hesitation
+              </small>
+            </p>
+            <p className="text-center m-1 bold-text">$450</p>
+            <p className="text-center  w-50 d-flex mx-auto justify-content-around px-2">
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar />
+            </p>
+            <button className="order-button">Buy Now</button>
+          </div>
+          <div>
+            <Image
+              src={eqip1}
+              alt="product image"
+              width={250}
+              height={150}
+              className="productImage"
+            />
+            <h5 className="text-center bold-text m-1">Therocare</h5>
+            <p className="text-secondary text-center my-1 mx-2">
+              <small>
+                This is the best equiment now. Take it without hesitation
+              </small>
+            </p>
+            <p className="text-center m-1 bold-text">$450</p>
+            <p className="text-center  w-50 d-flex mx-auto justify-content-around px-2">
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar color="gold" />
+              <FaStar />
+            </p>
+            <button className="order-button">Buy Now</button>
+          </div>
         </div>
       </div>
     </>
