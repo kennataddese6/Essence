@@ -55,7 +55,7 @@ export default function Home() {
             <Image src={thirdImage} alt="Hero Image" className="hero-image" />
           </div>
         </div>
-        <div className="col-lg-10 mx-lg-auto  px-2 my-5 py-4 py-lg-5 feedbacks">
+        <div className="col-lg-10 mx-lg-auto  px-3 my-5 py-4 py-lg-5 feedbacks">
           <h2 className="text-center text-white">
             What people are saying about us
           </h2>
