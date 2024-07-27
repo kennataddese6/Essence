@@ -1,13 +1,12 @@
 'use client';
 import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import perfectface from '@/assets/perfect-face.jpg';
 import Slider from 'react-slick';
 
 export default function Feedbacks() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     autoplay: true,
