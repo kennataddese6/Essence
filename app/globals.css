@@ -115,7 +115,16 @@ header {
   height: 100%;
   object-fit: contain;
 }
-
+.hero-button {
+  background-color: #458ff6 !important;
+  color: white !important;
+  border-radius: 55px !important;
+}
+.hero-button:hover {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 55px !important;
+}
 .herotextcontainer {
   display: flex;
   flex-direction: column;

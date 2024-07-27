@@ -14,7 +14,9 @@ export default function Hero() {
           equipment from around the globe.Our commitment to excellence ensures
           that healthcare providers have access to the latest reliable tools.
         </p>
-        <button className="btn btn-primary m-2 w-30 py-2">Learn more</button>
+        <button className="btn  m-2 w-30 py-2 px-4 hero-button">
+          Learn more
+        </button>
       </div>
       <div className="col-lg-6 ">
         <Image src={heroImage} alt="Hero Image" className="hero-image" />
