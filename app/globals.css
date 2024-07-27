@@ -140,11 +140,11 @@ header {
   cursor: pointer;
   transition: all 0.5s ease-out;
   border-color: white;
-  box-shadow: 0 0 2px dodgerblue;
+  box-shadow: 0 0 2px lightblue;
 }
 .serviceContainer div:hover {
-  border: 1px solid dodgerblue;
-  box-shadow: 0 0 4px dodgerblue;
+  /* border: 1px solid dodgerblue; */
+  box-shadow: 0 0 12px grey;
 }
 .service-button {
   background-color: white;
