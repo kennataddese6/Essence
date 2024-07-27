@@ -66,9 +66,10 @@ export default function Feedbacks() {
             </div>
             <div className="col-lg-6 p-3">
               <p className="text-white text-center text-lg-start">
-                "This guys are the deal. I have received the best attibute.
+                &quot;This guys are the deal. I have received the best attibute.
                 There patience and growing intel is what makes them the best
-                There patience and growing intel is what makes them the best "
+                There patience and growing intel is what makes them the best
+                &quot;
               </p>
             </div>
           </div>
@@ -100,9 +101,10 @@ export default function Feedbacks() {
             </div>
             <div className="col-lg-6 p-3">
               <p className="text-white text-center text-lg-start">
-                "This guys are the deal. I have received the best attibute.
+                &quot;This guys are the deal. I have received the best attibute.
                 There patience and growing intel is what makes them the best
-                There patience and growing intel is what makes them the best "
+                There patience and growing intel is what makes them the
+                best&quot;
               </p>
             </div>
           </div>
@@ -134,9 +136,10 @@ export default function Feedbacks() {
             </div>
             <div className="col-lg-6 p-3">
               <p className="text-white text-center text-lg-start">
-                "This guys are the deal. I have received the best attibute.
+                &quot;This guys are the deal. I have received the best attibute.
                 There patience and growing intel is what makes them the best
-                There patience and growing intel is what makes them the best "
+                There patience and growing intel is what makes them the
+                best&quot;
               </p>
             </div>
           </div>
