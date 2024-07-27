@@ -219,6 +219,10 @@ footer {
 .bold-text {
   font-weight: 700;
 }
+.footermark {
+  background-color: white !important;
+  color: #63b4f3 !important;
+}
 /* Laptop */
 @media only screen and (min-width: 992px) {
   .sub-header {

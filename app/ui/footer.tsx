@@ -7,7 +7,13 @@ export default function Footer() {
   return (
     <footer className="col-lg-11 col-xl-11">
       <div className="footerItem">
-        <h5 className="white-text p-3 ps-4">MT Custom Lights</h5>
+        <h5 className="white-text p-3 ps-4">
+          <div className="logo">
+            <div className="text-white">
+              <span className="footermark bold-text">E</span>Essence
+            </div>
+          </div>
+        </h5>
         <p className="white-text ps-3">
           <MdLocationOn color="white" fontSize={24} />
           <span className="ms-1 ">Bole, A.A Ethiopia</span>
