@@ -1,6 +1,6 @@
 'use client';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import perfectface from '@/assets/perfect-face.jpg';
 import Slider from 'react-slick';
@@ -18,7 +18,7 @@ export default function Feedbacks() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
