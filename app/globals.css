@@ -16,6 +16,7 @@ header {
   background-color: rgba(255, 255, 255, 0.66);
   backdrop-filter: blur(32px);
   border-bottom: 0.1px solid rgb(225, 225, 225);
+  z-index: 12;
 }
 .sub-header {
   margin: auto;
