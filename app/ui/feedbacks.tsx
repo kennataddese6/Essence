@@ -2,6 +2,8 @@
 import 'slick-carousel/slick/slick.css';
 import Image from 'next/image';
 import perfectface from '@/assets/perfect-face.jpg';
+import customer from '@/assets/customer.webp';
+import customer2 from '@/assets/customer2.webp';
 import Slider from 'react-slick';
 
 export default function Feedbacks() {
@@ -59,8 +61,8 @@ export default function Feedbacks() {
                 />
               </div>
               <div className="mx-4">
-                <h4 className="my-1">Kenna Taddese</h4>
-                <p>Co-founder</p>
+                <h4 className="my-1">Beza Debebe</h4>
+                <p>QA Assurance</p>
               </div>
             </div>
             <div className="col-lg-6 p-3">
@@ -87,15 +89,15 @@ export default function Feedbacks() {
             <div className="text-white  d-flex align-items-center  col-lg-6 py-2  mx-auto mx-lg-0">
               <div className="customerProfile">
                 <Image
-                  src={perfectface}
+                  src={customer}
                   width={100}
                   alt="profile"
                   className="customerImage"
                 />
               </div>
               <div className="mx-4">
-                <h4 className="my-1">Kenna Taddese</h4>
-                <p>Co-founder</p>
+                <h4 className="my-1">Meron Alemu</h4>
+                <p>Assistant</p>
               </div>
             </div>
             <div className="col-lg-6 p-3">
@@ -122,15 +124,15 @@ export default function Feedbacks() {
             <div className="text-white  d-flex align-items-center  col-lg-6 py-2  mx-auto mx-lg-0">
               <div className="customerProfile">
                 <Image
-                  src={perfectface}
+                  src={customer2}
                   width={100}
                   alt="profile"
                   className="customerImage"
                 />
               </div>
               <div className="mx-4">
-                <h4 className="my-1">Kenna Taddese</h4>
-                <p>Co-founder</p>
+                <h4 className="my-1">Ruth Moges</h4>
+                <p>Manager</p>
               </div>
             </div>
             <div className="col-lg-6 p-3">
