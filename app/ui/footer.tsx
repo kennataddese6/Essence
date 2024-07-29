@@ -1,11 +1,11 @@
-'use client';
-import { MdLocationOn, MdPhone, MdMail } from 'react-icons/md';
-import { MdOutlineEmail } from 'react-icons/md';
-import { CiFacebook, CiInstagram } from 'react-icons/ci';
-import { FaXTwitter } from 'react-icons/fa6';
+"use client";
+import { MdLocationOn, MdPhone, MdMail } from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiFacebook, CiInstagram } from "react-icons/ci";
+import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
-    <footer className="col-lg-11 col-xl-11">
+    <footer className="col-lg-11 col-xl-11 col-xxl-9">
       <div className="footerItem">
         <h5 className="white-text p-3 ps-4">
           <div className="logo">
