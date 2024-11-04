@@ -4,7 +4,7 @@ import heroImage from "@/assets/heroImage.png";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div className="heroContainer col-lg-11 col-xl-11 col-xxl-12">
+    <div className="heroContainer col-lg-11 col-xl-12 col-xxl-12">
       <div className=" col-lg-6 herotextcontainer">
         <h1 className="my-2 text-center text-lg-start p-2">
           Empowering health care with quality
