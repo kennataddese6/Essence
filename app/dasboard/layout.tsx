@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "../globals.css";
-import Navbar from "../ui/navbar";
-import Footer from "../ui/footer";
+import Sidebar from "../ui/sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,10 +13,9 @@ export default function ClientLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Navbar />
+    <div className="flex">
+      <Sidebar />
       {children}
-      <Footer />
-    </>
+    </div>
   );
 }
