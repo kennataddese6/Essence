@@ -14,15 +14,15 @@ export default function Footer() {
             </div>
           </div>
         </h5>
-        <p className="white-text ps-3">
+        <p className="white-text ps-3 flex">
           <MdLocationOn color="white" fontSize={24} />
           <span className="ms-1 ">Bole, A.A Ethiopia</span>
         </p>
-        <p className="white-text ps-3">
+        <p className="white-text ps-3 flex">
           <MdPhone color="white" fontSize={24} />
           <span className="ms-1 ">+251 991 374186</span>
         </p>
-        <p className="white-text ps-3">
+        <p className="white-text ps-3 flex">
           <MdOutlineEmail color="white" fontSize={24} />
           <span className="ms-2 ">essence@gmail.com</span>
         </p>
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="footerItem">
         <h5 className="white-text p-3 ps-4">Follow us</h5>
-        <p className="white-text ps-3 ">
+        <p className="white-text ps-3 flex">
           <CiFacebook color="white" fontSize={32} className="m-1" />
           <FaXTwitter color="white" fontSize={32} className="m-1" />
           <CiInstagram color="white" fontSize={32} />
