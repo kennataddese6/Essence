@@ -8,18 +8,14 @@ export default function Products() {
   return (
     <>
       <h2 className="text-center mt-5 mb-4">Check our latest Products</h2>
-      <div
-        className="serviceUnderline mx-auto mb-5"
-        style={{ background: "black" }}
-      ></div>
-      <div className="d-flex justify-content-around flex-wrap productsContainer">
-        <div>
+      <div className="serviceUnderline mx-auto mb-5"></div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 grid-flow-row">
+        <div className="hover:-translate-y-1 transition-all border border-gray-400 rounded-2xl hover:shadow-2xl max-w-72 justify-self-center">
           <Image
             src={eqip1}
             alt="product image"
             width={250}
-            height={150}
-            className="productImage"
+            className="object-contain h-44"
           />
           <h5 className="text-center bold-text m-1">Thermocare</h5>
           <p className="text-secondary text-center my-1 mx-2">
@@ -37,13 +33,13 @@ export default function Products() {
           </p>
           <button className="order-button">Buy Now</button>
         </div>
-        <div>
+        <div className="hover:-translate-y-1 transition-all border border-gray-400 rounded-2xl hover:shadow-2xl max-w-72 justify-self-center">
           <Image
             src={eqip2}
             alt="product image"
             width={250}
             height={150}
-            className="productImage"
+            className="object-contain h-44"
           />
           <h5 className="text-center bold-text m-1">Microbiaz</h5>
           <p className="text-secondary text-center my-1 mx-2">
@@ -61,13 +57,13 @@ export default function Products() {
           </p>
           <button className="order-button">Buy Now</button>
         </div>
-        <div>
+        <div className="hover:-translate-y-1 transition-all border border-gray-400 rounded-2xl hover:shadow-2xl max-w-72 justify-self-center">
           <Image
             src={eqip3}
             alt="product image"
             width={250}
             height={150}
-            className="productImage"
+            className="object-contain h-44"
           />
           <h5 className="text-center bold-text m-1">Lepu</h5>
           <p className="text-secondary text-center my-1 mx-2">
@@ -85,13 +81,13 @@ export default function Products() {
           </p>
           <button className="order-button">Buy Now</button>
         </div>
-        <div>
+        <div className="hover:-translate-y-1 transition-all border border-gray-400 rounded-2xl hover:shadow-2xl max-w-72 justify-self-center">
           <Image
             src={eqip4}
             alt="product image"
             width={250}
             height={150}
-            className="productImage"
+            className="object-contain h-44"
           />
           <h5 className="text-center bold-text m-1">Shenzhen</h5>
           <p className="text-secondary text-center my-1 mx-2">
