@@ -30,9 +30,7 @@ export default function RootLayout({
         </noscript>
       </Head>
       <body className={inter.className}>
-        <Navbar />
         {children}
-        <Footer />
         <Script
           id="smartsupp-script"
           strategy="lazyOnload"

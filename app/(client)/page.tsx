@@ -1,9 +1,9 @@
-import Hero from "./ui/hero";
-import Services from "./ui/services";
-import Benefits from "./ui/benefits";
-import Feedbacks from "./ui/feedbacks";
-import Products from "./ui/products";
-import Location from "./ui/location";
+import Hero from "../ui/hero";
+import Services from "../ui/services";
+import Benefits from "../ui/benefits";
+import Feedbacks from "../ui/feedbacks";
+import Products from "../ui/products";
+import Location from "../ui/location";
 export default function Home() {
   return (
     <>
