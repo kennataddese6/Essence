@@ -24,7 +24,7 @@ const Navbar = () => {
     },
     {
       name: "Sign in",
-      href: "/signin",
+      href: "/dasboard",
     },
   ];
   const handlemenu = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
           {navlinks.map((navlink, index) => (
             <li key={index}>
               <Link
-                href="#"
+                href={navlink.href}
                 className={
                   pathname == navlink.href ? "navbarlink-active" : "navbarlink"
                 }
