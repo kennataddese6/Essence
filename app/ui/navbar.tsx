@@ -31,7 +31,7 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <header>
+    <header className="bg-slate-50 lg:bg-transparent">
       <div className="sub-header col-lg-11 col-xl-11 col-xxl-9">
         <div className="logo">
           <div>
