@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import Sidebar from "../ui/sidebar";
+import DasboardHeader from "../ui/dasbord-header";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +17,7 @@ export default function ClientLayout({
     <div className="flex">
       <Sidebar />
       <div>
-        <h1 className="font-bold text-2xl py-2 px-4">Dasboard</h1>
+        <DasboardHeader />
         {children}
       </div>
     </div>
