@@ -33,13 +33,15 @@ export default function Sidebar() {
               <FaList fontSize={20} className="mr-2" /> Category
             </li>
           </Link>
-          <li
-            className={`px-8 py-3 my-2 text-white rounded-md cursor-pointer flex items-center hover:bg-slate-700 ${
-              pathname === "/product" && "bg-slate-700"
-            }`}
-          >
-            <FaCartPlus fontSize={20} className="mr-2" /> Product
-          </li>
+          <Link href={"/product"}>
+            <li
+              className={`px-8 py-3 my-2 text-white rounded-md cursor-pointer flex items-center hover:bg-slate-700 ${
+                pathname === "/product" && "bg-slate-700"
+              }`}
+            >
+              <FaCartPlus fontSize={20} className="mr-2" /> Product
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="bg-slate-700 p-3 flex items-center justify-between">
