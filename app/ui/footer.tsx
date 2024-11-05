@@ -20,11 +20,15 @@ export default function Footer() {
         </p>
         <p className="white-text ps-3 flex">
           <MdPhone color="white" fontSize={24} />
-          <span className="ms-1 ">+251 991 374186</span>
+          <span className="ms-1 ">+251 984242526</span>
+        </p>
+        <p className="white-text ps-3 flex">
+          <MdPhone color="white" fontSize={24} />
+          <span className="ms-1 ">+251 985242526</span>
         </p>
         <p className="white-text ps-3 flex">
           <MdOutlineEmail color="white" fontSize={24} />
-          <span className="ms-2 ">essence@gmail.com</span>
+          <span className="ms-2 ">essencetradingplc@gmail.com</span>
         </p>
       </div>
       <div className="footerItem">
