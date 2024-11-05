@@ -16,7 +16,7 @@ export default function ClientLayout({
   return (
     <div className="flex">
       <Sidebar />
-      <div>
+      <div className="w-full">
         <DasboardHeader />
         {children}
       </div>
