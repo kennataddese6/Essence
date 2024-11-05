@@ -8,11 +8,15 @@ import {
   FaArrowAltCircleRight,
 } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 export default function Sidebar() {
   const pathname = usePathname();
   return (
-    <div className="bg-slate-900 h-screen w-1/4 flex flex-col justify-between">
+    <div className="bg-slate-900 h-screen w-1/4 flex flex-col justify-between relative">
       <div>
+        <div className="p-2 bg-slate-400 absolute -right-2 top-3 rounded-lg cursor-pointer">
+          <FaArrowLeft />
+        </div>
         <h1 className="text-white font-bold text-3xl ml-12 mt-12">Essence</h1>
         <ul className="px-2 py-4">
           <Link href={"/dasboard"}>
