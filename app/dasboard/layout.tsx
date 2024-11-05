@@ -15,7 +15,10 @@ export default function ClientLayout({
   return (
     <div className="flex">
       <Sidebar />
-      {children}
+      <div>
+        <h1 className="font-bold text-2xl py-2 px-4">Dasboard</h1>
+        {children}
+      </div>
     </div>
   );
 }
