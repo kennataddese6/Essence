@@ -1,6 +1,7 @@
 "use server";
 import Category from "../db/models/categoryModel";
 import connectDB from "../db/config/db-config";
+import Product from "../db/models/productModel";
 
 export const getAllCategories = async () => {
   await connectDB();
@@ -28,6 +29,57 @@ export const createCategory = async (
       return { success: false, errorMeessage: "Category already exists" };
     }
     await Category.create({ name: formData.get("name") });
+    return { success: true, errorMeessage: "Bad request" };
+  } catch (error: any) {
+    return { success: false, errorMeessage: error.message };
+  }
+};
+
+export const deleteCategory = async (id: string) => {
+  await connectDB();
+  const category = await Category.findByIdAndDelete(id);
+  return category;
+};
+
+export const updateCategory = async (id: string, formData: FormData) => {
+  await connectDB();
+  const category = await Category.findByIdAndUpdate(id, formData);
+  return category;
+};
+
+export const getAllProducts = async () => {
+  await connectDB();
+  const products = await Product.find();
+  return products;
+};
+export const getProductById = async (id: string) => {
+  await connectDB();
+  const product = await Product.findById(id);
+  return product;
+};
+
+export type createProductState = {
+  success: boolean;
+  errorMeessage: string;
+};
+export const createProduct = async (
+  prevState: createProductState,
+  formData: FormData
+) => {
+  try {
+    await connectDB();
+    const product = await Product.findOne({ name: formData.get("name") });
+    if (product) {
+      return { success: false, errorMeessage: "Product already exists" };
+    }
+    await Product.create({
+      name: formData.get("name"),
+      description: formData.get("description"),
+      price: formData.get("price"),
+      rate: formData.get("rate"),
+      category: formData.get("category"),
+      image: formData.get("image"),
+    });
     return { success: true, errorMeessage: "Bad request" };
   } catch (error: any) {
     return { success: false, errorMeessage: error.message };

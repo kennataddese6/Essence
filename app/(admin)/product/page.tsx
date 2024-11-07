@@ -9,6 +9,7 @@ export default function Page() {
         <input
           type="text"
           placeholder="Enter name"
+          name="name"
           id="category"
           required
           className="mt-4 mb-2 border border-gray-200 py-2 px-3  w-full"
@@ -16,6 +17,7 @@ export default function Page() {
         <br />
         <input
           type="text"
+          name="description"
           placeholder="Enter description"
           id="category"
           required
@@ -25,6 +27,7 @@ export default function Page() {
         <input
           type="number"
           placeholder="Enter price"
+          name="price"
           id="category"
           required
           className="mb-2 border border-gray-200 py-2 px-3 w-full"
@@ -32,6 +35,7 @@ export default function Page() {
         <br />
         <input
           type="number"
+          name="rate"
           min={1}
           max={5}
           placeholder="Enter rate"
@@ -40,8 +44,22 @@ export default function Page() {
           className="mb-2 border border-gray-200 py-2 px-3 w-full"
         />
         <br />
+        <select
+          id="category"
+          name="category"
+          required
+          className="mt-4 mb-2 border border-gray-200 py-2 px-3 w-full text-grey-200"
+        >
+          <option value=""> Select Category</option>
+          <option value="1">Category 1</option>
+          <option value="2">Category 2</option>
+          <option value="3">Category 3</option>
+          <option value="4">Category 4</option>
+        </select>
+        <br />
         <input
           type="file"
+          name="image"
           min={1}
           max={5}
           placeholder="Enter rate"
