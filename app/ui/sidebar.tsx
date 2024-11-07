@@ -6,6 +6,7 @@ import {
   FaList,
   FaUserCircle,
   FaArrowAltCircleRight,
+  FaUsers,
 } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
@@ -44,6 +45,15 @@ export default function Sidebar() {
               }`}
             >
               <FaCartPlus fontSize={20} className="mr-2" /> Product
+            </li>
+          </Link>
+          <Link href={"/users"}>
+            <li
+              className={`px-8 py-3 my-2 text-white rounded-md cursor-pointer flex items-center hover:bg-slate-700 ${
+                pathname === "/users" && "bg-slate-700"
+              }`}
+            >
+              <FaUsers fontSize={22} className="mr-2" /> Users
             </li>
           </Link>
         </ul>
