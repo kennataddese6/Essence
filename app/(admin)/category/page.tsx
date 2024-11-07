@@ -1,9 +1,23 @@
-import { createCategory } from "@/app/(server)/actions/actions";
+"use client";
+import { useActionState } from "react";
+import {
+  createCategory,
+  createCategoryState,
+} from "@/app/(server)/actions/actions";
+
 export default function Page() {
+  const initialState: createCategoryState = {
+    success: false,
+    errorMeessage: "",
+  };
+  const [state, formAction, pending] = useActionState(
+    createCategory,
+    initialState
+  );
   return (
     <div className="m-4">
       <form
-        action={createCategory}
+        action={formAction}
         className="py-6 px-14 border border-gray-500  rounded-md"
       >
         <label htmlFor="category" className="font-bold text-2xl">
@@ -21,10 +35,22 @@ export default function Page() {
         <br />
         <button
           type="submit"
-          className="bg-slate-900 text-white py-2 px-8 w-full "
+          className={`text-white py-2 px-8 w-full ${
+            pending ? "bg-slate-950" : "bg-slate-900"
+          }`}
+          disabled={pending}
         >
-          Submit
+          {pending ? (
+            <div className="border-t-2 border-t-slate-100 animate-spin h-5 w-5 mx-auto rounded-full"></div>
+          ) : (
+            "Submit"
+          )}
         </button>
+        {state.errorMeessage && (
+          <p className="text-red-500 text-sm text-center mt-2">
+            {state.errorMeessage}
+          </p>
+        )}
       </form>
     </div>
   );
