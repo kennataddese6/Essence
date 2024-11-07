@@ -2,6 +2,8 @@
 import Category from "../db/models/categoryModel";
 import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
+import path from "path";
+import fs from "fs";
 
 export const getAllCategories = async () => {
   await connectDB();
@@ -58,6 +60,23 @@ export const getProductById = async (id: string) => {
   return product;
 };
 
+const saveImage = async (formData: FormData) => {
+  const image: any = formData.get("image");
+  const imagePath = path.join(process.cwd(), "storage/images", image.name);
+  const buffer: any = Buffer.from(await image.arrayBuffer());
+
+  return new Promise((resolve, reject) => {
+    fs.writeFile(imagePath, buffer, (err) => {
+      if (err) {
+        console.error("Error writing the file:", err);
+        reject(err);
+      } else {
+        resolve(image.name);
+      }
+    });
+  });
+};
+
 export type createProductState = {
   success: boolean;
   errorMeessage: string;
@@ -72,15 +91,16 @@ export const createProduct = async (
     if (product) {
       return { success: false, errorMeessage: "Product already exists" };
     }
+    const imageName = await saveImage(formData);
     await Product.create({
       name: formData.get("name"),
       description: formData.get("description"),
       price: formData.get("price"),
       rate: formData.get("rate"),
       category: formData.get("category"),
-      image: formData.get("image"),
+      image: imageName,
     });
-    return { success: true, errorMeessage: "Bad request" };
+    return { success: true, errorMeessage: "" };
   } catch (error: any) {
     return { success: false, errorMeessage: error.message };
   }
