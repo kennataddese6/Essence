@@ -38,13 +38,14 @@ export async function ProductsTable() {
               </th>
               <td className="px-6 py-4">{product.description}</td>
               <td className="px-6 py-4">{product.category}</td>
-              <td className="px-6 py-4">{product.price}</td>
+              <td className="px-6 py-4">ETB {product.price}</td>
               <td className="px-6 py-4">
                 <Image
-                  src={`/images/products/${product.image}`} 
+                  src={`http://localhost:3000/image/${product._id}`}
                   alt="product image"
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
+                  className="rounded-lg"
                 />
               </td>
             </tr>
