@@ -16,7 +16,7 @@ export default function ClientLayout({
   return (
     <div className="flex">
       <Sidebar />
-      <div className="w-full">
+      <div className="w-full h-screen overflow-scroll">
         <DasboardHeader />
         {children}
       </div>
