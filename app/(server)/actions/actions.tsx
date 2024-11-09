@@ -30,7 +30,7 @@ export const createCategory = async (
       return { success: false, errorMeessage: "Category already exists" };
     }
     await Category.create({ name: formData.get("name") });
-    return { success: true, errorMeessage: "Bad request" };
+    return { success: true, errorMeessage: "" };
   } catch (error: any) {
     return { success: false, errorMeessage: error.message };
   }
