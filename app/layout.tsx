@@ -3,8 +3,8 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./ui/navbar";
-import Footer from "./ui/footer";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ export default function RootLayout({
         </noscript>
       </Head>
       <body className={inter.className}>
+        <ToastContainer autoClose={5000} />
         {children}
         <Script
           id="smartsupp-script"

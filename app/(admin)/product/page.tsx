@@ -1,9 +1,10 @@
 "use client";
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import {
   createProduct,
   createProductState,
 } from "@/app/(server)/actions/actions";
+import { toast } from "react-toastify";
 export default function Page() {
   const initialState: createProductState = {
     success: false,
@@ -13,6 +14,11 @@ export default function Page() {
     createProduct,
     initialState
   );
+  useEffect(() => {
+    if (state.success) {
+      toast.success("Product created successfully");
+    }
+  }, [state]);
   return (
     <div className="m-4">
       <form
