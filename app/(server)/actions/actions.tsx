@@ -2,7 +2,7 @@
 import Category from "../db/models/categoryModel";
 import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
-import path from "path";
+import path, { resolve } from "path";
 import fs from "fs";
 
 export const getAllCategories = async () => {
@@ -60,9 +60,9 @@ export const getProductById = async (id: string) => {
   return product;
 };
 
-const saveImage = async (formData: FormData) => {
+const saveImage = async (formData: FormData, imageName: string) => {
   const image: any = formData.get("image");
-  const imagePath = path.join(process.cwd(), "storage/images", image.name);
+  const imagePath = path.join(process.cwd(), "storage/images", imageName);
   const buffer: any = Buffer.from(await image.arrayBuffer());
 
   return new Promise((resolve, reject) => {
@@ -85,23 +85,26 @@ export const createProduct = async (
   prevState: createProductState,
   formData: FormData
 ) => {
+  let newProduct;
   try {
     await connectDB();
     const product = await Product.findOne({ name: formData.get("name") });
     if (product) {
       return { success: false, errorMeessage: "Product already exists" };
     }
-    const imageName = await saveImage(formData);
-    await Product.create({
+    newProduct = await Product.create({
       name: formData.get("name"),
       description: formData.get("description"),
       price: formData.get("price"),
       rate: formData.get("rate"),
       category: formData.get("category"),
-      image: imageName,
     });
+    await saveImage(formData, newProduct._id.toString());
     return { success: true, errorMeessage: "" };
   } catch (error: any) {
+    if (newProduct) {
+      await Product.findByIdAndDelete(newProduct._id);
+    }
     return { success: false, errorMeessage: error.message };
   }
 };
