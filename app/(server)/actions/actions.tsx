@@ -4,6 +4,17 @@ import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
 import { saveImage } from "@/app/features/save-files";
 
+export const getTotalCategory = async () => {
+  await connectDB();
+  const totalCategory = await Category.countDocuments();
+  return totalCategory;
+};
+
+export const getTotalProduct = async () => {
+  await connectDB();
+  const totalProduct = await Product.countDocuments();
+  return totalProduct;
+};
 export const getAllCategories = async () => {
   await connectDB();
   const categories = await Category.find();
