@@ -2,8 +2,7 @@
 import Category from "../db/models/categoryModel";
 import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
-import path, { resolve } from "path";
-import fs from "fs";
+import { saveImage } from "@/app/features/save-files";
 
 export const getAllCategories = async () => {
   await connectDB();
@@ -58,23 +57,6 @@ export const getProductById = async (id: string) => {
   await connectDB();
   const product = await Product.findById(id);
   return product;
-};
-
-const saveImage = async (formData: FormData, imageName: string) => {
-  const image: any = formData.get("image");
-  const imagePath = path.join(process.cwd(), "storage/images", imageName);
-  const buffer: any = Buffer.from(await image.arrayBuffer());
-
-  return new Promise((resolve, reject) => {
-    fs.writeFile(imagePath, buffer, (err) => {
-      if (err) {
-        console.error("Error writing the file:", err);
-        reject(err);
-      } else {
-        resolve(image.name);
-      }
-    });
-  });
 };
 
 export type createProductState = {
