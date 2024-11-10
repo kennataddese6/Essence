@@ -1,5 +1,6 @@
-import { getAllProducts } from "@/app/(server)/actions/actions";
+import { deleteProduct, getAllProducts } from "@/app/(server)/actions/actions";
 import Image from "next/image";
+import { FaTrashAlt } from "react-icons/fa";
 export async function ProductsTable() {
   const products = await getAllProducts();
   return (
@@ -22,6 +23,7 @@ export async function ProductsTable() {
             <th scope="col" className="px-6 py-3">
               Image
             </th>
+            <th scope="col" className="px-6 py-3"></th>
           </tr>
         </thead>
         <tbody>
@@ -47,6 +49,19 @@ export async function ProductsTable() {
                   height={60}
                   className="rounded-lg"
                 />
+              </td>
+              <td className="px-6 py-4">
+                <form action={deleteProduct}>
+                  <input
+                    type="text"
+                    name="id"
+                    className="hidden"
+                    value={product._id}
+                  />
+                  <button type="submit">
+                    <FaTrashAlt fontSize={18} />
+                  </button>
+                </form>
               </td>
             </tr>
           ))}

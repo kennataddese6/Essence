@@ -55,6 +55,12 @@ export const deleteCategory = async (formData: FormData) => {
   revalidatePath("/category");
 };
 
+export const deleteProduct = async (formData: FormData) => {
+  await connectDB();
+  await Product.findByIdAndDelete(formData.get("id"));
+  revalidatePath("/product");
+};
+
 export const updateCategory = async (id: string, formData: FormData) => {
   await connectDB();
   const category = await Category.findByIdAndUpdate(id, formData);
