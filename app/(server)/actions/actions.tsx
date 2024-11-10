@@ -3,6 +3,7 @@ import Category from "../db/models/categoryModel";
 import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
 import { saveImage } from "@/app/features/save-files";
+import { revalidatePath } from "next/cache";
 
 export const getTotalCategory = async () => {
   await connectDB();
@@ -93,6 +94,7 @@ export const createProduct = async (
       category: formData.get("category"),
     });
     await saveImage(formData, newProduct._id.toString());
+    revalidatePath("/product");
     return { success: true, errorMeessage: "" };
   } catch (error: any) {
     if (newProduct) {
