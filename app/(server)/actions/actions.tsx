@@ -63,7 +63,7 @@ export const updateCategory = async (id: string, formData: FormData) => {
 export const getAllProducts = async () => {
   await connectDB();
   const products = await Product.find();
-  return products;
+  return products.reverse();
 };
 export const getProductById = async (id: string) => {
   await connectDB();
