@@ -4,7 +4,8 @@ import connectDB from "../db/config/db-config";
 import Product from "../db/models/productModel";
 import { saveImage } from "@/app/features/save-files";
 import { revalidatePath } from "next/cache";
-
+import fs from "fs";
+import path from "path";
 export const getTotalCategory = async () => {
   await connectDB();
   const totalCategory = await Category.countDocuments();
@@ -58,6 +59,12 @@ export const deleteCategory = async (formData: FormData) => {
 export const deleteProduct = async (formData: FormData) => {
   await connectDB();
   await Product.findByIdAndDelete(formData.get("id"));
+  fs.unlinkSync(
+    path.join(
+      __dirname,
+      `../../../../../storage/images/${formData.get("id") + ".WebP"}`
+    )
+  );
   revalidatePath("/product");
 };
 
