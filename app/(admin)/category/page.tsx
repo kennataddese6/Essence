@@ -1,9 +1,10 @@
 "use client";
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import {
   createCategory,
   createCategoryState,
 } from "@/app/(server)/actions/actions";
+import { toast } from "react-toastify";
 
 export default function Page() {
   const initialState: createCategoryState = {
@@ -14,6 +15,11 @@ export default function Page() {
     createCategory,
     initialState
   );
+  useEffect(() => {
+    if (state.success) {
+      toast.success("Category added successfully");
+    }
+  }, [state]);
   return (
     <div className="m-4">
       <form
