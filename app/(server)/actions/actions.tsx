@@ -19,7 +19,7 @@ export const getTotalProduct = async () => {
 export const getAllCategories = async () => {
   await connectDB();
   const categories = await Category.find();
-  return categories;
+  return categories.reverse();
 };
 
 export const getCategoryById = async (id: string) => {
@@ -42,6 +42,7 @@ export const createCategory = async (
       return { success: false, errorMeessage: "Category already exists" };
     }
     await Category.create({ name: formData.get("name") });
+    revalidatePath("/category");
     return { success: true, errorMeessage: "" };
   } catch (error: any) {
     return { success: false, errorMeessage: error.message };
