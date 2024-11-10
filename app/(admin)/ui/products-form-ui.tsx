@@ -5,7 +5,7 @@ import {
   createProductState,
 } from "@/app/(server)/actions/actions";
 import { toast } from "react-toastify";
-export default function ProductsFormUI() {
+export default function ProductsFormUI({ categories }: { categories: any }) {
   const initialState: createProductState = {
     success: false,
     errorMeessage: "",
@@ -73,10 +73,11 @@ export default function ProductsFormUI() {
         className="mt-4 mb-2 border border-gray-200 py-2 px-3 w-full text-grey-200"
       >
         <option value=""> Select Category</option>
-        <option value="1">Category 1</option>
-        <option value="2">Category 2</option>
-        <option value="3">Category 3</option>
-        <option value="4">Category 4</option>
+        {categories.map((category: any, index: number) => (
+          <option value={category.name} key={index}>
+            {category.name}
+          </option>
+        ))}
       </select>
       <br />
       <input
