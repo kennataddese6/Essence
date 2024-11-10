@@ -1,4 +1,7 @@
-import { getAllCategories } from "@/app/(server)/actions/actions";
+import {
+  deleteCategory,
+  getAllCategories,
+} from "@/app/(server)/actions/actions";
 import { FaTrashAlt } from "react-icons/fa";
 
 export default async function CategoryTable() {
@@ -28,7 +31,17 @@ export default async function CategoryTable() {
               </th>
               <td className="px-6 py-4">{category._id}</td>
               <td className="px-6 py-4">
-                <FaTrashAlt cursor={"pointer"} fontSize={18} />
+                <form action={deleteCategory}>
+                  <input
+                    type="text"
+                    value={category._id}
+                    name="id"
+                    className="hidden"
+                  />
+                  <button type="submit">
+                    <FaTrashAlt cursor={"pointer"} fontSize={18} />
+                  </button>
+                </form>
               </td>
             </tr>
           ))}

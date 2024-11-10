@@ -49,10 +49,10 @@ export const createCategory = async (
   }
 };
 
-export const deleteCategory = async (id: string) => {
+export const deleteCategory = async (formData: FormData) => {
   await connectDB();
-  const category = await Category.findByIdAndDelete(id);
-  return category;
+  await Category.findByIdAndDelete(formData.get("id"));
+  revalidatePath("/category");
 };
 
 export const updateCategory = async (id: string, formData: FormData) => {
