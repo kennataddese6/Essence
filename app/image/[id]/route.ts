@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-export async function GET({}, { params }: { params: { id: string } }) {
+export async function GET(req: any, { params }: { params: { id: string } }) {
   const { id } = params;
   try {
     const imagePath = path.join(process.cwd(), `storage/images/${id}.WebP`);
